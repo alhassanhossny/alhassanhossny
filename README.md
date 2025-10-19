@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=6C63FF&size=28&lines=Software+Engineer;Flutter+Developer;Web+Enthusiast;Clean+Architecture+Lover" />
+  <img src="https://readme-typing-svg.herokuapp.com?color=6C63FF&size=28&lines=Software+Engineer;System+Administrator;Web+Enthusiast;Clean+Architecture+Lover" />
 </p>
 
 ---
@@ -83,7 +83,7 @@
   <a href="https://discord.gg/yourserver" target="_blank">
     <img src="https://skillicons.dev/icons?i=discord" width="36" onmouseover="this.style.transform='scale(1.3)'" onmouseout="this.style.transform='scale(1)'" />
   </a>
-  <a href="https://www.linkedin.com/in/alhassanhossny-721176268" target="_blank">
+  <a href="https://www.linkedin.com/in/alhassanhossny" target="_blank">
     <img src="https://skillicons.dev/icons?i=linkedin" width="36" onmouseover="this.style.transform='scale(1.3)'" onmouseout="this.style.transform='scale(1)'" />
   </a>
   <a href="mailto:m07amed1st@gmail.com">
