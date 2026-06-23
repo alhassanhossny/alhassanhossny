@@ -37,13 +37,15 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Odoo%2019-714B67?style=for-the-badge&logo=odoo&logoColor=white" alt="Odoo 19" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/Clean%20Architecture-2C2C2C?style=for-the-badge&logo=arch-linux&logoColor=white" alt="Clean Architecture" />
   <img src="https://img.shields.io/badge/MVVM-9C27B0?style=for-the-badge&logo=flutter&logoColor=white" alt="MVVM" />
   <img src="https://img.shields.io/badge/Provider-4285F4?style=for-the-badge&logo=flutter&logoColor=white" alt="Provider" />
   <img src="https://img.shields.io/badge/Bloc-FFCA28?style=for-the-badge&logo=flutter&logoColor=black" alt="Bloc" />
   <img src="https://img.shields.io/badge/Riverpod-0FA958?style=for-the-badge&logo=flutter&logoColor=white" alt="Riverpod" />
   <img src="https://img.shields.io/badge/Hive-F6C915?style=for-the-badge&logo=hive&logoColor=black" alt="Hive" />
-  <img src="https://img.shields.io/badge/Odoo%2019-714B67?style=for-the-badge&logo=odoo&logoColor=white" alt="Odoo 19" />
 </p>
 
 ---
@@ -64,7 +66,10 @@
 <h2 align="center">GitHub Trophies</h2>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=alhassanhossny&row=2&column=4&margin-w=12&margin-h=12" alt="GitHub trophies" />
+  <img src="https://img.shields.io/badge/Open%20Source-Active-6C63FF?style=for-the-badge&logo=github&logoColor=white" alt="Open Source active" />
+  <img src="https://img.shields.io/badge/Profile-Building%20Daily-00D4FF?style=for-the-badge&logo=githubactions&logoColor=black" alt="Building daily" />
+  <img src="https://img.shields.io/badge/Focus-Clean%20Architecture-2C2C2C?style=for-the-badge&logo=arch-linux&logoColor=white" alt="Clean Architecture focus" />
+  <img src="https://img.shields.io/badge/Goal-AI%20Powered%20Apps-714B67?style=for-the-badge&logo=openai&logoColor=white" alt="AI powered apps goal" />
 </p>
 
 ---
@@ -72,24 +77,25 @@
 <h2 align="center">GitHub Stats</h2>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=22&duration=2400&pause=700&color=00D4FF&center=true&vCenter=true&width=620&lines=Live+GitHub+activity;Contribution+streaks;Profile+performance+cards" alt="GitHub stats section animation" />
+  <img src="https://img.shields.io/badge/Live%20Stats-GitHub%20Activity-6C63FF?style=for-the-badge&logo=github&logoColor=white" alt="Live GitHub activity" />
+  <img src="https://img.shields.io/badge/Streak-Contributions-00D4FF?style=for-the-badge&logo=git&logoColor=black" alt="Contribution streaks" />
 </p>
 
 <p align="center">
   <a href="https://github.com/alhassanhossny">
-    <img src="https://github-readme-stats.vercel.app/api?username=alhassanhossny&show_icons=true&theme=tokyonight&hide_border=false&border_color=6C63FF&border_radius=14&rank_icon=github&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D4FF&text_color=E6EDF3" alt="GitHub stats card" />
+    <img src="https://github-readme-stats.vercel.app/api?username=alhassanhossny&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub stats card" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com?user=alhassanhossny&theme=tokyonight&hide_border=false&border=6C63FF&border_radius=14&background=0D1117&ring=00D4FF&fire=6C63FF&currStreakLabel=00D4FF" alt="GitHub streak stats card" />
+    <img src="https://github-readme-streak-stats.herokuapp.com?user=alhassanhossny&theme=tokyonight&hide_border=true" alt="GitHub streak stats card" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/alhassanhossny">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=alhassanhossny&theme=tokyo-night&hide_border=false&border_color=6C63FF&bg_color=0D1117&color=E6EDF3&line=6C63FF&point=00D4FF&area=true&area_color=6C63FF&radius=14" alt="GitHub activity graph card" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=alhassanhossny&theme=tokyo-night&hide_border=true" alt="GitHub activity graph card" />
   </a>
 </p>
 
