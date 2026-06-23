@@ -1,56 +1,106 @@
-# Alhassan Hossny Portfolio
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0D1117,50:6C63FF,100:00D4FF&text=Alhassan%20Hossny&fontColor=ffffff&fontSize=42&fontAlignY=35&desc=Software%20Engineer%20%7C%20System%20Administrator%20%7C%20Web%20Enthusiast&descAlignY=58&animation=fadeIn" alt="Alhassan Hossny banner" />
+</p>
 
-A static personal portfolio website for Alhassan Hossny. The site presents profile details, services, resume history, selected portfolio work, client logos, and a contact form that opens the visitor's email app.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=28&duration=2800&pause=900&color=6C63FF&center=true&vCenter=true&width=760&lines=Software+Engineer;Full-Stack+Web+Developer;WordPress+Developer;System+Administrator;DevOps+Learner;Clean+Architecture+Lover" alt="Typing animation" />
+</p>
 
-## Features
+<p align="center">
+  <a href="https://github.com/alhassanhossny">
+    <img src="https://img.shields.io/github/followers/alhassanhossny?label=Followers&style=for-the-badge&logo=github" alt="GitHub followers" />
+  </a>
+  <img src="https://img.shields.io/github/stars/alhassanhossny?label=Stars&style=for-the-badge&logo=github" alt="GitHub stars" />
+  <img src="https://komarev.com/ghpvc/?username=alhassanhossny&style=for-the-badge&color=6C63FF" alt="Profile views" />
+</p>
 
-- Responsive single-page portfolio layout
-- Sidebar contact details and social links
-- About, resume, portfolio, blog, and contact sections
-- Filterable portfolio categories
-- Accessible skip link, form labels, button states, and current-page navigation
-- Static contact form using `mailto:`
-- No build step required
+---
 
-## Project Structure
+<h2 align="center">About Me</h2>
 
-```text
-.
-├── index.html
-├── assets
-│   ├── css
-│   │   └── style.css
-│   ├── js
-│   │   └── script.js
-│   └── images
-└── website-demo-image
-```
+<p align="center">
+  I build practical software, clean web experiences, and reliable support workflows across web, WordPress, ERP, and DevOps-focused environments.
+</p>
 
-## Preview Locally
+<p align="center">
+  <b>Currently learning:</b> DevOps, cloud operations, and automation<br>
+  <b>Interested in:</b> AI, mobile apps, scalable web products, and clean architecture<br>
+  <b>2026 goal:</b> Build a cross-platform AI-powered application
+</p>
 
-Open `index.html` directly in a browser, or run a small static server from the project root:
+---
 
-```bash
-python3 -m http.server 8000
-```
+<h2 align="center">Tech Stack & Tools</h2>
 
-Then visit:
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,nodejs,express,mongodb,firebase,supabase,flutter,dart,git,github,figma,xd,vscode,androidstudio,docker,kubernetes,linux,aws,azure" alt="Tech stack icons" />
+</p>
 
-```text
-http://localhost:8000
-```
+<p align="center">
+  <img src="https://img.shields.io/badge/Clean%20Architecture-2C2C2C?style=for-the-badge&logo=arch-linux&logoColor=white" alt="Clean Architecture" />
+  <img src="https://img.shields.io/badge/MVVM-9C27B0?style=for-the-badge&logo=flutter&logoColor=white" alt="MVVM" />
+  <img src="https://img.shields.io/badge/Provider-4285F4?style=for-the-badge&logo=flutter&logoColor=white" alt="Provider" />
+  <img src="https://img.shields.io/badge/Bloc-FFCA28?style=for-the-badge&logo=flutter&logoColor=black" alt="Bloc" />
+  <img src="https://img.shields.io/badge/Riverpod-0FA958?style=for-the-badge&logo=flutter&logoColor=white" alt="Riverpod" />
+  <img src="https://img.shields.io/badge/Hive-F6C915?style=for-the-badge&logo=hive&logoColor=black" alt="Hive" />
+</p>
 
-## Recent Enhancements
+---
 
-- Fixed malformed email markup and stale placeholder profile text
-- Added SEO and social metadata
-- Improved social links, client links, and portfolio link behavior
-- Replaced placeholder blog cards with an honest coming-soon state
-- Repaired the embedded map markup
-- Added accessible labels and status messaging to the contact form
-- Hardened JavaScript so optional sections do not break page behavior
-- Added reduced-motion handling and visible keyboard focus styles
+<h2 align="center">Featured Work</h2>
 
-## Deployment
+<p align="center">
+  <a href="https://github.com/alhassanhossny/Graduation-Project">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=alhassanhossny&repo=Graduation-Project&theme=tokyonight&hide_border=true" alt="Graduation Project repository card" />
+  </a>
+  <a href="https://github.com/alhassanhossny/AI-Vortex-Website">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=alhassanhossny&repo=AI-Vortex-Website&theme=tokyonight&hide_border=true" alt="AI Vortex Website repository card" />
+  </a>
+</p>
 
-This repository can be deployed as a static site with GitHub Pages, Netlify, Vercel, Cloudflare Pages, or any simple web server. No package installation or build command is required.
+---
+
+<h2 align="center">GitHub Trophies</h2>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=alhassanhossny&theme=tokyonight&no-frame=true&no-bg=true&row=2&column=4" alt="GitHub trophies" />
+</p>
+
+---
+
+<h2 align="center">GitHub Stats</h2>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=alhassanhossny&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=alhassanhossny&theme=tokyonight&hide_border=true" alt="GitHub streak stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=alhassanhossny&theme=tokyo-night&hide_border=true" alt="GitHub activity graph" />
+</p>
+
+---
+
+<h2 align="center">Connect With Me</h2>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/alhassanhossny" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Alhassan%20Hossny-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:alhassanhossny@outlook.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-alhassanhossny%40outlook.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://wa.me/201014763233" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-Message-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
+  </a>
+  <a href="https://github.com/alhassanhossny" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-alhassanhossny-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:00D4FF,50:6C63FF,100:0D1117" alt="Footer wave" />
+</p>
