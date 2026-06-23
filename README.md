@@ -43,6 +43,7 @@
   <img src="https://img.shields.io/badge/Bloc-FFCA28?style=for-the-badge&logo=flutter&logoColor=black" alt="Bloc" />
   <img src="https://img.shields.io/badge/Riverpod-0FA958?style=for-the-badge&logo=flutter&logoColor=white" alt="Riverpod" />
   <img src="https://img.shields.io/badge/Hive-F6C915?style=for-the-badge&logo=hive&logoColor=black" alt="Hive" />
+  <img src="https://img.shields.io/badge/Odoo%2019-714B67?style=for-the-badge&logo=odoo&logoColor=white" alt="Odoo 19" />
 </p>
 
 ---
@@ -63,7 +64,7 @@
 <h2 align="center">GitHub Trophies</h2>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=alhassanhossny&theme=tokyonight&no-frame=true&no-bg=true&row=2&column=4" alt="GitHub trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=alhassanhossny&row=2&column=4&margin-w=12&margin-h=12" alt="GitHub trophies" />
 </p>
 
 ---
@@ -71,15 +72,25 @@
 <h2 align="center">GitHub Stats</h2>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=alhassanhossny&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub stats" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=22&duration=2400&pause=700&color=00D4FF&center=true&vCenter=true&width=620&lines=Live+GitHub+activity;Contribution+streaks;Profile+performance+cards" alt="GitHub stats section animation" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=alhassanhossny&theme=tokyonight&hide_border=true" alt="GitHub streak stats" />
+  <a href="https://github.com/alhassanhossny">
+    <img src="https://github-readme-stats.vercel.app/api?username=alhassanhossny&show_icons=true&theme=tokyonight&hide_border=false&border_color=6C63FF&border_radius=14&rank_icon=github&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D4FF&text_color=E6EDF3" alt="GitHub stats card" />
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=alhassanhossny&theme=tokyo-night&hide_border=true" alt="GitHub activity graph" />
+  <a href="https://git.io/streak-stats">
+    <img src="https://streak-stats.demolab.com?user=alhassanhossny&theme=tokyonight&hide_border=false&border=6C63FF&border_radius=14&background=0D1117&ring=00D4FF&fire=6C63FF&currStreakLabel=00D4FF" alt="GitHub streak stats card" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/alhassanhossny">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=alhassanhossny&theme=tokyo-night&hide_border=false&border_color=6C63FF&bg_color=0D1117&color=E6EDF3&line=6C63FF&point=00D4FF&area=true&area_color=6C63FF&radius=14" alt="GitHub activity graph card" />
+  </a>
 </p>
 
 ---
