@@ -1,159 +1,211 @@
 'use strict';
 
+const toggleActive = function (element, forceState) {
+  if (!element) return false;
 
-
-// element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
-
-// sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
-
-
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-// modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-}
-
-// add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
-
-  testimonialsItem[i].addEventListener("click", function () {
-
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-
-    testimonialsModalFunc();
-
-  });
-
-}
-
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
-
-
-
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
-
-select.addEventListener("click", function () { elementToggleFunc(this); });
-
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
-
-  });
-}
-
-// filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
-
-const filterFunc = function (selectedValue) {
-
-  for (let i = 0; i < filterItems.length; i++) {
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
-    }
-
+  if (typeof forceState === 'boolean') {
+    element.classList.toggle('active', forceState);
+  } else {
+    element.classList.toggle('active');
   }
 
-}
+  return element.classList.contains('active');
+};
 
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-for (let i = 0; i < filterBtn.length; i++) {
 
-  filterBtn[i].addEventListener("click", function () {
+// Sidebar
+const sidebar = document.querySelector('[data-sidebar]');
+const sidebarBtn = document.querySelector('[data-sidebar-btn]');
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
-
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
-
+if (sidebar && sidebarBtn) {
+  sidebarBtn.addEventListener('click', function () {
+    const isOpen = toggleActive(sidebar);
+    sidebarBtn.setAttribute('aria-expanded', String(isOpen));
   });
-
 }
 
 
+// Testimonials modal
+const testimonialsItem = document.querySelectorAll('[data-testimonials-item]');
+const modalContainer = document.querySelector('[data-modal-container]');
+const modalCloseBtn = document.querySelector('[data-modal-close-btn]');
+const overlay = document.querySelector('[data-overlay]');
+const modalImg = document.querySelector('[data-modal-img]');
+const modalTitle = document.querySelector('[data-modal-title]');
+const modalText = document.querySelector('[data-modal-text]');
 
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
+const toggleTestimonialsModal = function (forceState) {
+  const shouldOpen = typeof forceState === 'boolean'
+    ? forceState
+    : !modalContainer?.classList.contains('active');
 
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
+  toggleActive(modalContainer, shouldOpen);
+  toggleActive(overlay, shouldOpen);
+};
 
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
+testimonialsItem.forEach(function (item) {
+  item.addEventListener('click', function () {
+    const avatar = item.querySelector('[data-testimonials-avatar]');
+    const title = item.querySelector('[data-testimonials-title]');
+    const text = item.querySelector('[data-testimonials-text]');
+
+    if (avatar && modalImg) {
+      modalImg.src = avatar.src;
+      modalImg.alt = avatar.alt;
     }
 
+    if (title && modalTitle) modalTitle.textContent = title.textContent;
+    if (text && modalText) modalText.innerHTML = text.innerHTML;
+
+    toggleTestimonialsModal(true);
+  });
+});
+
+if (modalCloseBtn) {
+  modalCloseBtn.addEventListener('click', function () {
+    toggleTestimonialsModal(false);
+  });
+}
+
+if (overlay) {
+  overlay.addEventListener('click', function () {
+    toggleTestimonialsModal(false);
   });
 }
 
 
+// Portfolio filter
+const select = document.querySelector('[data-select]');
+const selectItems = document.querySelectorAll('[data-select-item]');
+const selectValue = document.querySelector('[data-select-value]');
+const filterBtn = document.querySelectorAll('[data-filter-btn]');
+const filterItems = document.querySelectorAll('[data-filter-item]');
 
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
+const filterProjects = function (selectedValue) {
+  filterItems.forEach(function (item) {
+    const isMatch = selectedValue === 'all' || selectedValue === item.dataset.category;
+    item.classList.toggle('active', isMatch);
+  });
+};
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+if (select) {
+  select.addEventListener('click', function () {
+    toggleActive(select);
+  });
+}
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
+selectItems.forEach(function (item) {
+  item.addEventListener('click', function () {
+    const selectedValue = item.textContent.trim().toLowerCase();
+
+    if (selectValue) selectValue.textContent = item.textContent.trim();
+    toggleActive(select, false);
+    filterProjects(selectedValue);
+  });
+});
+
+let lastClickedBtn = document.querySelector('[data-filter-btn].active') || filterBtn[0];
+
+filterBtn.forEach(function (button) {
+  button.addEventListener('click', function () {
+    const selectedValue = button.textContent.trim().toLowerCase();
+
+    if (selectValue) selectValue.textContent = button.textContent.trim();
+    filterProjects(selectedValue);
+
+    if (lastClickedBtn) lastClickedBtn.classList.remove('active');
+    button.classList.add('active');
+    lastClickedBtn = button;
+  });
+});
+
+
+// Contact form
+const form = document.querySelector('[data-form]');
+const formInputs = document.querySelectorAll('[data-form-input]');
+const formBtn = document.querySelector('[data-form-btn]');
+const formStatus = document.querySelector('[data-form-status]');
+const contactEmail = 'alhassanhossny@outlook.com';
+
+const setFormStatus = function (message, statusClass = '') {
+  if (!formStatus) return;
+
+  formStatus.className = `form-status ${statusClass}`.trim();
+  formStatus.textContent = message;
+};
+
+const updateFormState = function () {
+  if (!form || !formBtn) return;
+
+  formBtn.disabled = !form.checkValidity();
+};
+
+if (form) {
+  formInputs.forEach(function (input) {
+    input.addEventListener('input', function () {
+      updateFormState();
+      setFormStatus('');
+    });
+  });
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    if (!form.checkValidity()) {
+      setFormStatus('Please complete all fields before sending.', 'is-error');
+      form.reportValidity();
+      return;
+    }
+
+    const formData = new FormData(form);
+    const fullName = String(formData.get('fullname') || '').trim();
+    const email = String(formData.get('email') || '').trim();
+    const message = String(formData.get('message') || '').trim();
+    const subject = `Portfolio inquiry from ${fullName || 'website visitor'}`;
+    const body = [
+      `Name: ${fullName}`,
+      `Email: ${email}`,
+      '',
+      message,
+    ].join('\n');
+
+    window.location.href = `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    setFormStatus('Your email app should open with the message ready to send.', 'is-success');
+  });
+
+  updateFormState();
+}
+
+
+// Page navigation
+const navigationLinks = document.querySelectorAll('[data-nav-link]');
+const pages = document.querySelectorAll('[data-page]');
+
+navigationLinks.forEach(function (link, linkIndex) {
+  link.addEventListener('click', function () {
+    const targetPage = link.textContent.trim().toLowerCase();
+
+    pages.forEach(function (page) {
+      const isActive = targetPage === page.dataset.page;
+      page.classList.toggle('active', isActive);
+    });
+
+    navigationLinks.forEach(function (navLink, navIndex) {
+      const isCurrent = navIndex === linkIndex;
+      navLink.classList.toggle('active', isCurrent);
+
+      if (isCurrent) {
+        navLink.setAttribute('aria-current', 'page');
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        navLink.removeAttribute('aria-current');
       }
-    }
+    });
 
+    window.scrollTo({
+      top: 0,
+      behavior: prefersReducedMotion ? 'auto' : 'smooth',
+    });
   });
-}
+});
