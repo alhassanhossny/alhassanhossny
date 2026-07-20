@@ -54,6 +54,9 @@
 
 <p align="center">
   <a href="https://github.com/alhassanhossny/Graduation-Project">
+    
+    <img src="https://github-readme-stats.vercel.app/api?username=alhassanhossny&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&cache_seconds=86400" alt="GitHub Stats" />
+    
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=alhassanhossny&repo=Graduation-Project&theme=tokyonight&hide_border=true" alt="Graduation Project repository card" />
   </a>
   <a href="https://github.com/alhassanhossny/AI-Vortex-Website">
